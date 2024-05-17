@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+h1
+{
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid aqua;
+    border-radius: 25%;
+    background-color:black;
+}
+
+#display{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#btns button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 3px;
+    min-width: 125px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+#start
+{
+    background-color: #7AB2B2
+}
+
+#stop
+{
+    background-color: #FF204E;
+}
+
+#reset
+{
+    background-color: #0C359E;
+}

@@ -1,41 +1,51 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
-}
-
-h1
-{
-    font-size: 4rem;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
 }
 
-#container
-{
+h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+#container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    border: 1px solid aqua;
-    border-radius: 25%;
-    background-color:black;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px white; 
+    background-color: whitesmoke;
+     border-radius: 5%;
+    max-width: 90%;
 }
 
-#display{
+#display {
     font-size: 5rem;
     font-family: monospace;
     font-weight: bold;
     margin-bottom: 15px;
-    color: white;
+    color: black;
+    text-align: center;
 }
 
-#btns button{
+#btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#btns button {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
-    margin: 3px;
+    margin: 5px;
     min-width: 125px;
     border: none;
     border-radius: 20px;
@@ -43,17 +53,42 @@ h1
     color: black;
 }
 
-#start
-{
-    background-color: #7AB2B2
+#start {
+    background-color: #7AB2B2;
 }
 
-#stop
-{
+#stop {
     background-color: #FF204E;
 }
 
-#reset
-{
+#reset {
     background-color: #0C359E;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    #display {
+        font-size: 4rem;
+    }
+    #btns button {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    #display {
+        font-size: 3rem;
+    }
+    #btns button {
+        font-size: 1rem;
+        padding: 6px 12px;
+        min-width: 80px;
+    }
 }
